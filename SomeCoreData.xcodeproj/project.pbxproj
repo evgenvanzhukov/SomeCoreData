@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67D88AA129117AFB00D91C85 /* MeterDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D88AA029117AFB00D91C85 /* MeterDataManager.swift */; };
+		67D88AA429117BE000D91C85 /* MeterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D88AA329117BE000D91C85 /* MeterType.swift */; };
 		67EB48642911122F00E52D0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EB48632911122F00E52D0B /* AppDelegate.swift */; };
 		67EB48662911122F00E52D0B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EB48652911122F00E52D0B /* SceneDelegate.swift */; };
 		67EB48682911122F00E52D0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EB48672911122F00E52D0B /* ViewController.swift */; };
@@ -14,9 +16,16 @@
 		67EB486E2911122F00E52D0B /* SomeCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 67EB486C2911122F00E52D0B /* SomeCoreData.xcdatamodeld */; };
 		67EB48702911123000E52D0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67EB486F2911123000E52D0B /* Assets.xcassets */; };
 		67EB48732911123000E52D0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67EB48712911123000E52D0B /* LaunchScreen.storyboard */; };
+		67EB4880291114E900E52D0B /* Report+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EB487C291114E900E52D0B /* Report+CoreDataClass.swift */; };
+		67EB4881291114E900E52D0B /* Report+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EB487D291114E900E52D0B /* Report+CoreDataProperties.swift */; };
+		67EB4882291114E900E52D0B /* Meter+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EB487E291114E900E52D0B /* Meter+CoreDataClass.swift */; };
+		67EB4883291114E900E52D0B /* Meter+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EB487F291114E900E52D0B /* Meter+CoreDataProperties.swift */; };
+		67EB4885291114FD00E52D0B /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EB4884291114FD00E52D0B /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		67D88AA029117AFB00D91C85 /* MeterDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeterDataManager.swift; sourceTree = "<group>"; };
+		67D88AA329117BE000D91C85 /* MeterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeterType.swift; sourceTree = "<group>"; };
 		67EB48602911122F00E52D0B /* SomeCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SomeCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67EB48632911122F00E52D0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67EB48652911122F00E52D0B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +35,11 @@
 		67EB486F2911123000E52D0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67EB48722911123000E52D0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67EB48742911123000E52D0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67EB487C291114E900E52D0B /* Report+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Report+CoreDataClass.swift"; sourceTree = "<group>"; };
+		67EB487D291114E900E52D0B /* Report+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Report+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		67EB487E291114E900E52D0B /* Meter+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Meter+CoreDataClass.swift"; sourceTree = "<group>"; };
+		67EB487F291114E900E52D0B /* Meter+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Meter+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		67EB4884291114FD00E52D0B /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,9 +53,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67D88AA229117BCE00D91C85 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				67D88AA329117BE000D91C85 /* MeterType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		67EB48572911122F00E52D0B = {
 			isa = PBXGroup;
 			children = (
+				67D88AA229117BCE00D91C85 /* Models */,
+				67EB487A291114BF00E52D0B /* Domain */,
 				67EB48622911122F00E52D0B /* SomeCoreData */,
 				67EB48612911122F00E52D0B /* Products */,
 			);
@@ -68,6 +92,27 @@
 				67EB486C2911122F00E52D0B /* SomeCoreData.xcdatamodeld */,
 			);
 			path = SomeCoreData;
+			sourceTree = "<group>";
+		};
+		67EB487A291114BF00E52D0B /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				67EB487B291114C800E52D0B /* Models */,
+				67EB4884291114FD00E52D0B /* DataManager.swift */,
+				67D88AA029117AFB00D91C85 /* MeterDataManager.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		67EB487B291114C800E52D0B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				67EB487C291114E900E52D0B /* Report+CoreDataClass.swift */,
+				67EB487D291114E900E52D0B /* Report+CoreDataProperties.swift */,
+				67EB487E291114E900E52D0B /* Meter+CoreDataClass.swift */,
+				67EB487F291114E900E52D0B /* Meter+CoreDataProperties.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +187,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				67EB486E2911122F00E52D0B /* SomeCoreData.xcdatamodeld in Sources */,
+				67D88AA129117AFB00D91C85 /* MeterDataManager.swift in Sources */,
+				67EB4883291114E900E52D0B /* Meter+CoreDataProperties.swift in Sources */,
+				67EB4881291114E900E52D0B /* Report+CoreDataProperties.swift in Sources */,
+				67EB4882291114E900E52D0B /* Meter+CoreDataClass.swift in Sources */,
 				67EB48682911122F00E52D0B /* ViewController.swift in Sources */,
 				67EB48642911122F00E52D0B /* AppDelegate.swift in Sources */,
 				67EB48662911122F00E52D0B /* SceneDelegate.swift in Sources */,
+				67EB4885291114FD00E52D0B /* DataManager.swift in Sources */,
+				67D88AA429117BE000D91C85 /* MeterType.swift in Sources */,
+				67EB4880291114E900E52D0B /* Report+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +349,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Zhu.SomeCoreData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -314,7 +366,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Zhu.SomeCoreData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
